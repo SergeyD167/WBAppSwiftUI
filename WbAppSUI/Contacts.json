@@ -1,0 +1,57 @@
+[
+        {
+            "id": "f2f20e04-39c8-440e-8993-85edb0293111",
+            "username": "Анастасия Иванова",
+            "phone": "+7 908 555-00-00",
+            "lastSeen": "Last seen yesterday",
+            "userImage": "user1",
+            "isNewStory": false,
+            "isOnline": false
+        },
+        {
+            "id": "f2f20e04-39c8-440e-8993-85edb0293222",
+            "username": "Петя",
+            "phone": "+7 908 555-11-11",
+            "lastSeen": "Online",
+            "userImage": "user2",
+            "isNewStory": false,
+            "isOnline": true
+        },
+        {
+            "id": "f2f20e04-39c8-440e-8993-85edb0293333",
+            "username": "Маман",
+            "phone": "+7 908 555-22-22",
+            "lastSeen": "Last seen 3 hours ago",
+            "userImage": "user3",
+            "isNewStory": true,
+            "isOnline": false
+        },
+        {
+            "id": "f2f20e04-39c8-440e-8993-85edb0293444",
+            "username": "Арбуз Дыня",
+            "phone": "+7 908 555-33-33",
+            "lastSeen": "Online",
+            "userImage": "user4",
+            "isNewStory": false,
+            "isOnline": true
+        },
+        {
+            "id": "f2f20e04-39c8-440e-8993-85edb0293555",
+            "username": "Иван Иванов",
+            "phone": "+7 908 555-44-44",
+            "lastSeen": "Online",
+            "userImage": null,
+            "isNewStory": false,
+            "isOnline": true
+        },
+        {
+            "id": "f2f20e04-39c8-440e-8993-85edb0293666",
+            "username": "Лиса Алиса",
+            "phone": "+7 908 555-55-55",
+            "lastSeen": "Last seen 30 minutes ago",
+            "userImage": null,
+            "isNewStory": true,
+            "isOnline": false
+        }
+]
+
