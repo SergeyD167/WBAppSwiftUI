@@ -29,6 +29,14 @@ struct MainTabView: View {
                 }
                 .tag(2)
         }
+        .onAppear {
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("OpenProfileTab"), object: nil, queue: .main) { _ in
+                selectedTab = 2
+            }
+        }
+        .onDisappear {
+            NotificationCenter.default.removeObserver(self, name: NSNotification.Name("OpenProfileTab"), object: nil)
+        }
     }
 }
 
