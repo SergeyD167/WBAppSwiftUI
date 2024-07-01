@@ -61,20 +61,3 @@ extension WbAppWidgetAttributes {
         WbAppWidgetAttributes(name: "World")
     }
 }
-
-extension WbAppWidgetAttributes.ContentState {
-    fileprivate static var smiley: WbAppWidgetAttributes.ContentState {
-        WbAppWidgetAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: WbAppWidgetAttributes.ContentState {
-         WbAppWidgetAttributes.ContentState(emoji: "🤩")
-     }
-}
-
-#Preview("Notification", as: .content, using: WbAppWidgetAttributes.preview) {
-   WbAppWidgetLiveActivity()
-} contentStates: {
-    WbAppWidgetAttributes.ContentState.smiley
-    WbAppWidgetAttributes.ContentState.starEyes
-}

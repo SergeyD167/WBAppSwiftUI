@@ -34,7 +34,10 @@
 		651EA7552C32FEE4009F71BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651EA7542C32FEE4009F71BF /* Assets.xcassets */; };
 		651EA7592C32FEE4009F71BF /* WbAppWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 651EA7452C32FEE3009F71BF /* WbAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		651EA75F2C32FF17009F71BF /* SiriWbAppIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 651EA75E2C32FF17009F71BF /* SiriWbAppIntent.intentdefinition */; };
-		651EA7632C32FF72009F71BF /* SettingsIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EA7622C32FF72009F71BF /* SettingsIntent.swift */; };
+		651EA7632C32FF72009F71BF /* ProfileIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EA7622C32FF72009F71BF /* ProfileIntent.swift */; };
+		651EA7652C330381009F71BF /* WbAppWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EA7642C330381009F71BF /* WbAppWidgetEntryView.swift */; };
+		651EA7692C3304FA009F71BF /* ProfileIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651EA7682C3304FA009F71BF /* ProfileIntent.swift */; };
+		651EA76A2C330DE2009F71BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C96F52C1F270900A0D346 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +94,9 @@
 		651EA7542C32FEE4009F71BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651EA7562C32FEE4009F71BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		651EA75E2C32FF17009F71BF /* SiriWbAppIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SiriWbAppIntent.intentdefinition; sourceTree = "<group>"; };
-		651EA7622C32FF72009F71BF /* SettingsIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIntent.swift; sourceTree = "<group>"; };
+		651EA7622C32FF72009F71BF /* ProfileIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIntent.swift; sourceTree = "<group>"; };
+		651EA7642C330381009F71BF /* WbAppWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WbAppWidgetEntryView.swift; sourceTree = "<group>"; };
+		651EA7682C3304FA009F71BF /* ProfileIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileIntent.swift; path = WbAppSUI/Intents/ProfileIntent.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +242,8 @@
 				651EA74E2C32FEE3009F71BF /* WbAppWidgetLiveActivity.swift */,
 				651EA7502C32FEE3009F71BF /* WbAppWidget.swift */,
 				651EA7522C32FEE3009F71BF /* AppIntent.swift */,
+				651EA7642C330381009F71BF /* WbAppWidgetEntryView.swift */,
+				651EA7682C3304FA009F71BF /* ProfileIntent.swift */,
 				651EA7542C32FEE4009F71BF /* Assets.xcassets */,
 				651EA7562C32FEE4009F71BF /* Info.plist */,
 			);
@@ -246,7 +253,7 @@
 		651EA7602C32FF27009F71BF /* Intents */ = {
 			isa = PBXGroup;
 			children = (
-				651EA7622C32FF72009F71BF /* SettingsIntent.swift */,
+				651EA7622C32FF72009F71BF /* ProfileIntent.swift */,
 				651EA75E2C32FF17009F71BF /* SiriWbAppIntent.intentdefinition */,
 			);
 			path = Intents;
@@ -354,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651EA76A2C330DE2009F71BF /* Assets.xcassets in Resources */,
 				651EA7552C32FEE4009F71BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +375,7 @@
 			files = (
 				651C97212C1F2D4300A0D346 /* ContactsListView.swift in Sources */,
 				651C97042C1F289200A0D346 /* OnboardingView.swift in Sources */,
-				651EA7632C32FF72009F71BF /* SettingsIntent.swift in Sources */,
+				651EA7632C32FF72009F71BF /* ProfileIntent.swift in Sources */,
 				651C971E2C1F2D4300A0D346 /* Contact.swift in Sources */,
 				651C96F22C1F270700A0D346 /* WbAppSUIApp.swift in Sources */,
 				651C971C2C1F2D4300A0D346 /* MainTabView.swift in Sources */,
@@ -390,8 +398,10 @@
 			files = (
 				651EA74D2C32FEE3009F71BF /* WbAppWidgetBundle.swift in Sources */,
 				651EA7532C32FEE3009F71BF /* AppIntent.swift in Sources */,
+				651EA7652C330381009F71BF /* WbAppWidgetEntryView.swift in Sources */,
 				651EA7512C32FEE3009F71BF /* WbAppWidget.swift in Sources */,
 				651EA74F2C32FEE3009F71BF /* WbAppWidgetLiveActivity.swift in Sources */,
+				651EA7692C3304FA009F71BF /* ProfileIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -515,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -541,7 +551,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +581,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,7 +606,7 @@
 				INFOPLIST_FILE = WbAppWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WbAppWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,7 +633,7 @@
 				INFOPLIST_FILE = WbAppWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WbAppWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -30,12 +30,20 @@ struct MainTabView: View {
                 .tag(2)
         }
         .onAppear {
-            NotificationCenter.default.addObserver(forName: NSNotification.Name("OpenProfileTab"), object: nil, queue: .main) { _ in
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("OpenProfile"), object: nil, queue: .main) { _ in
                 selectedTab = 2
+            }
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("OpenLastChat"), object: nil, queue: .main) { _ in
+                selectedTab = 1
+            }
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("OpenNewContact"), object: nil, queue: .main) { _ in
+                selectedTab = 0
             }
         }
         .onDisappear {
-            NotificationCenter.default.removeObserver(self, name: NSNotification.Name("OpenProfileTab"), object: nil)
+            NotificationCenter.default.removeObserver(self, name: NSNotification.Name("OpenProfile"), object: nil)
+            NotificationCenter.default.removeObserver(self, name: NSNotification.Name("OpenLastChat"), object: nil)
+            NotificationCenter.default.removeObserver(self, name: NSNotification.Name("OpenNewContact"), object: nil)
         }
     }
 }
